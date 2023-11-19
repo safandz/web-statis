@@ -1,0 +1,293 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none; 
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: #005eff;
+    --second-color: #0a0a0a;
+}
+section{
+    padding: 50px 10%;
+}
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+
+
+
+/*HEADER*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h3 {
+    display: flex;
+    padding: 0.8rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.img{
+    width: 100%;
+}
+.logo img{
+    width: 40px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+
+
+
+/*NAVBAR*/
+.navbar{
+    display: flex;
+}
+
+li{
+    float: left;
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn{
+    color: var(--main-color);
+    transition: all 0.5s ease;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #26623b;
+    z-index: 1;
+}
+.dropdown-content a{
+    color: #000000;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar a:hover::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+
+/*PROFIL*/
+.profil{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    gap: 1rem;
+}
+.profil .profil-text .heading{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0.5rem 0 1.4rem;
+}
+.profil .profil-text .heading2{
+    margin: 0.5rem 0 1rem;
+}
+.profil .profil-text .heading3{
+    margin: 1.2rem 0 1rem;
+}
+.profil .profil-text p{
+    text-align: justify;
+}
+
+/*SEJARAH*/
+.sejarah{
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+    background: #d4e4ff;
+    gap: 1rem;
+}
+.sejarah .sejarah-text .heading{
+    color: var(--second-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0.5rem 0 1.4rem;
+}
+.sejarah .sejarah-text .heading2{
+    margin: 0.5rem 0 1rem;
+}
+.sejarah .sejarah-text .heading3{
+    margin: 1.2rem 0 1rem;
+}
+.sejarah .sejarah-text p{
+    text-align: justify;
+}
+
+/*VISI MISI*/
+.visimisi{
+    width: 100%;
+    min-height: 90vh;
+}
+.visimisi .heading h1{
+    color: var(--main-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0.5rem 0 2.5rem;
+}
+.visimisi .visimisi-text .heading2{
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+}
+.visimisi .visimisi-text p{
+    text-align: center;
+}
+.visimisi .visimisi-text .heading3{
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+}
+
+/*PROGRAM*/
+.program{
+    background: #d4e4ff;
+}
+.program .heading{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.program-img{
+    flex: 1 1 21rem;
+    width: 40px;
+}
+.program-text{
+    flex: 1 1 21rem;
+}
+.program-text h2{
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+.program-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+.btn{
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+.btn:hover{
+    color: #fff;
+    background: var(--second-color);
+}
+
+/*STRUKTUR ORGANISASI*/
+.struktur{
+    width: 100%;
+    min-height: 90vh;
+    display: block;
+    align-items: center;
+    gap: 1rem;
+}
+.struktur .heading{
+    text-align: center;
+    color: var(--main-color);
+}
+.struktur .image img{
+    padding: 50px;
+    width: 900px;
+    align-items: center;
+}
+
+/*KONTAK*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social a{
+    font-size: 27px;
+    margin: 0.5rem;
+}
+.social a .bx{
+    padding: 5px;
+    color: #fff;
+    background: #000000;
+    border-radius: 50%;
+}
+.social a .bx:hover{
+    background: var(--main-color);
+}
+.links{
+    margin: 1rem 0 1rem;
+}
+.links a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1rem;
+}
+.links a:hover{
+    color: var(--main-color);
+}
+.contact p{
+    text-align: center;
+}
